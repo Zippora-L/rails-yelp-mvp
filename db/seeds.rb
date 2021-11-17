@@ -17,7 +17,7 @@ puts "Seeding restaurants..."
     name: Faker::Restaurant.name,
     address: Faker::Address.street_address,
     phone_number: Faker::PhoneNumber.cell_phone_with_country_code,
-    category: Review::CATEGORY.sample
+    category: Restaurant::CATEGORY.sample
   )
   restaurant.save!
   puts "Restaurant #{restaurant.id} saved to database"
